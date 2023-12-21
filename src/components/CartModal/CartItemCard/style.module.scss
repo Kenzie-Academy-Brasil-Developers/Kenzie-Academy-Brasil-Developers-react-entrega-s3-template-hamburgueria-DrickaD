@@ -1,0 +1,58 @@
+.itemList{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    width:  24.8125rem;
+    height: 5rem;
+    padding: 1rem 0.875rem;
+}
+
+.divItem{
+    display: flex;
+    gap: 1rem;
+
+    & .divImg{
+        width: 82.259px;
+        height: 80px;
+        border-radius: 5px;
+        background: var(--gray-100);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .divInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+.img{
+    width: 55px;
+    height: 53.49px;
+}
+.divBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone{
+    color: var(--gray-200);
+    border: none;
+    width: 11.311px;
+    height: 14px;
+    color: var(--gray-200);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: normal;
+}
+
+
+@media(max-width: 500px){
+    .itemList{
+        width: 17.3125rem;
+    }
+}

@@ -1,0 +1,47 @@
+%btn{
+    padding: 0rem 1.25rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray-200);
+    border: none;
+ 
+}
+
+.btnDefaul{
+    @extend %btn;
+    height: 3.75rem;
+    width: 8.125rem;
+    background-color: var(--gray-200);
+    &:hover{
+        background-color: var(--color-primary);
+    }
+}
+
+.btnMedium{
+    @extend %btn;
+    height:2.5rem;
+    width: 8.125rem;
+    background-color: var(--gray-200);
+    &:hover{
+        background-color: var(--color-primary);
+    }
+}
+
+.btnModal{
+    @extend %btn;
+    height: 3.75rem;
+    width: 28.375rem;
+    &:hover{
+        background-color: var(--color-primary);
+    }
+}
+
+@media(max-width: 800px){
+    .btnModal{
+        width: 23rem;
+        height: 3.75rem;
+    }
+}

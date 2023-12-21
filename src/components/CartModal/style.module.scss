@@ -1,0 +1,123 @@
+.bottomModal{
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal{
+    border-radius: 8px;
+    background: #FFF;
+    width: 32rem;
+    height: 25.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+    
+}
+
+.heading{
+    background-color: var(--color-primary);
+    width: 30.25rem;
+    height: 2.563rem;
+    border-radius: 8px 8px 0px 0px;  
+    padding-inline: clamp(0.5rem, 0.875rem, 1rem);
+    // padding: 1rem 0.875rem;
+    padding-block: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeButton{
+    height: 24px;
+    background-color: var(--color-primary);
+    color: #FFF;
+}
+
+
+.bodyModal{
+    width: 484px;
+    height: 19.938rem;
+    border-radius: 0px 0px 8px 8px;
+    background: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    
+    padding: 16px 14px;
+    
+    & .divUl{
+        margin: 0 auto;
+        overflow-y: auto;
+        height: 200px;
+    }
+    
+}
+
+.listCart{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    width: 28.375rem;
+}
+
+.divBottom{
+    padding: 1rem; 
+    width: 28.375rem;
+    
+    border-top: 2px solid var(--gray-100);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.divTotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+@media(max-width: 800px){
+    .modal{
+        width: 397px;
+        // height: 57px;
+    }
+
+    .heading{
+        width: 382px;
+        padding-inline: clamp(0.2rem, 0.5rem, 1rem);
+        justify-content: space-around;
+    }
+    .bodyModal{
+        width: 382px;
+        padding-inline: clamp(0.2rem, 0.5rem, 1rem);
+    }
+    .divUl{
+        width: 20.3125rem;
+    }
+    .listCart{
+        width: 100%;
+    }
+
+    .divBottom{
+        width: 358px;
+        padding-inline: clamp(0.2rem, 0.5rem, 1rem);
+    }
+
+}

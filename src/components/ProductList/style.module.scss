@@ -1,0 +1,24 @@
+.container_list{
+        max-width: 85.5rem;
+        width: 100%;
+        margin: 0 auto;
+        padding-inline: clamp(1rem, 2rem, 3rem);
+        padding-block: 2rem;
+}
+
+ul{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 2rem, 3rem);
+    justify-content: flex-start;
+}
+
+
+
+@media(max-width: 500px){
+    ul{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+  }

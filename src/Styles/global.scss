@@ -1,0 +1,25 @@
+:root{
+    --color-primary: #27AE60;
+    --colorsecundary:#EB5757;
+
+    --gray-600: #333333;
+    --gray-300: #828282;
+    --gray-200:#BDBDBD;
+    --gray-100: #E0E0E0;
+    --gray-0: #F5F5F5;
+}
+
+body{
+    background-color: var(--gray-0);
+    width: 100%;
+    max-width: 100rem;
+}
+
+button{
+	cursor: pointer;
+	border: none;
+	transition: 1s;
+	& :hover{
+        transform: scale(1.3);
+    }
+}
