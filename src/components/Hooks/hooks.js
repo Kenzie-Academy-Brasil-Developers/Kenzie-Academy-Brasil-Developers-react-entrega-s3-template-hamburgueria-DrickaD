@@ -36,8 +36,7 @@ export const useKeydown = (keyId, calback) =>{
       window.removeEventListener("keydown", handleKeydown);
 
       }
-   },[])
+   },[]);
 
    return ref;
-
 }

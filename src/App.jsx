@@ -1,10 +1,14 @@
 import { HomePage } from "./pages/HomePage"
-import "./Styles/index.scss"
+import { ToastContainer } from "react-toastify"
 
-function App() {
+import "./Styles/index.scss";
+import'react-toastify/dist/ReactToastify.css' ;
+
+const App = () =>{
   return (
     <>
       <HomePage />
+      <ToastContainer autoClose={1500}/>
     </>
   )
 }

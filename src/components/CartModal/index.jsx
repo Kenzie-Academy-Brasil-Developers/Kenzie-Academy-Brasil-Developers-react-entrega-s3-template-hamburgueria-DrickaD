@@ -1,7 +1,7 @@
 import { MdClose } from "react-icons/md";
 import { CartItemCard } from "./CartItemCard";
-import styles from "./style.module.scss";
 import { useOutClick, useKeydown } from "../Hooks/hooks";
+import styles from "./style.module.scss";
 
 export const CartModal = ({cartList, removeProductCart, removeAllProductCart,setIsOpen}) => {
 
@@ -10,12 +10,12 @@ export const CartModal = ({cartList, removeProductCart, removeAllProductCart,set
    }, 0);
 
    const modalRef = useOutClick(()=>{
-      setIsOpen(false)
-   })
+      setIsOpen(false);
+   });
    
    const buttonRef = useKeydown("Escape", (element) =>{
-         element.click()
-   })
+         element.click();
+   });
 
    return (
       <div role="dialog" className={styles.bottomModal}>
